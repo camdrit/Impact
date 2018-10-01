@@ -161,6 +161,16 @@ input:disabled {
 	transform: translate(0, -100%);
 }
 
+.fadeOut {
+	opacity: 0;
+	transition: opacity 100ms ease;
+}
+
+.fadeIn {
+	opacity: 1;
+	transition: opacity 100ms ease;
+}
+
 /* --- Layers ------------------------------------------------------------------ */
 
 #layerContainer {
@@ -254,7 +264,7 @@ h3#entityClass {
 #entitySettings {
 	background-color: rgba(0,0,0,0.95);
 	margin-top: 1px;
-	display: none;
+	opacity: 0;
 }
 
 #entityDefinitions {
